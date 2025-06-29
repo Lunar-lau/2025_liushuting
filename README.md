@@ -1,6 +1,6 @@
 # Full-Stack Coin Combination Application
 
-This repository contains a full-stack application which calculates **minimum number of coins needed to make up a target amount**, it is composed of a [**backend API service (Java and Dropwizard)**](./coin-combination), [**a frontend user interface(React))**](./coin-calculator-frontend), and [**an Nginx reverse proxy**](./main_nginx_proxy). All services are containerized and managed with Docker.
+This repository contains a full-stack application which calculates **minimum number of coins needed to make up a target amount**, it is composed of a [**backend REST API service (Java and Dropwizard)**](./coin-combination), [**a frontend user interface(React)**](./coin-calculator-frontend), and [**an Nginx reverse proxy**](./main_nginx_proxy). All services are containerized and managed with Docker.
 <p align="center">
   <img src="app_screenshot.png" alt="App Screenshot" width="600"/>
 </p>
