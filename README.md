@@ -1,6 +1,6 @@
 # Full-Stack Coin Combination Application
 
-This repository contains a full-stack application which calculates **minimum number of coins needed to make up a target amount**, it is composed of a **backend API service(java and dropwizard)(https://www.docker.com/get-started/)**, **a frontend user interface(react)**, and an Nginx reverse proxy. All services are containerized and managed with Docker.
+This repository contains a full-stack application which calculates **minimum number of coins needed to make up a target amount**, it is composed of a **backend API service(java and dropwizard)**, **a frontend user interface(react)**, and an Nginx reverse proxy. All services are containerized and managed with Docker.
 
 ## 🚀 Quick Start
 
@@ -13,11 +13,11 @@ Before you begin, please ensure you have **[Docker](https://www.docker.com/get-s
 1.  **Clone the project repository:**
     ```bash
     git clone https://github.com/Lunar-lau/2025_liushuting.git
-    cd 2025_liushuting-main
+    cd 2025_liushuting
     ```
 
 2.  **Build and start all services:**
-    In the project's root directory (`2025_liushuting-main/`, where `docker-compose.yml` is located), execute:
+    In the project's root directory (`2025_liushuting/`, where `docker-compose.yml` is located), execute:
     ```bash
     docker compose up --build -d
     ```
