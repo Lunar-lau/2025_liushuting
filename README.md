@@ -38,6 +38,9 @@ Once all services are up and running, you can access the frontend application in
 
 * **Frontend Application:** `http://localhost`
 * **Dropwizard REST API Example:** `http://localhost/api/coins/6?coins=1,2`
+- `6`: Target amount — the total value you want to reach using coins.
+- `coins=1,2`: Available coin denominations — a list of coin values you can use (in this case, 1 and 2).
+- The API returns a JSON array with the **minimum combination of coins** needed to make up the target amount.
 
 ### Stop All Services
 
