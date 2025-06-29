@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  
+  coin-combination:
+    build: ./coin-combination 
+    ports:
+      - "8080:8080" 
+    
+    networks:
+      - app_network
+
+  coin-calculator-frontend: 
+    build: ./coin-calculator-frontend 
+    networks:
+      - app_network
+
+  main_nginx_proxy:
+    build: ./main_nginx_proxy
+    ports:
+      - "80:80"
+    networks:
+      - app_network
+    depends_on:
+      - coin-combination 
+      - coin-calculator-frontend 
+
+networks:
+  app_network:
+    driver: bridge
